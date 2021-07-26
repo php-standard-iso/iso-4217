@@ -1,0 +1,57 @@
+{
+  "name": "php-standard-iso/iso-4217",
+  "type": "library",
+  "description": "Standard ISO 4217 transposed to PHP",
+  "license": "BSD-3-Clause",
+  "keywords": [
+    "iso",
+    "international standard organisation",
+    "standard",
+    "iso4217",
+    "currency code"
+  ],
+  "homepage": "https://github.com/php-standard-iso/iso-4217",
+  "support": {
+    "email": "github-support@swarmtech.fr"
+  },
+  "config": {
+    "process-timeout": 600,
+    "sort-packages": true
+  },
+  "authors": [
+    {
+      "name": "gary gitton",
+      "homepage": "http://www.github.com/garygitton"
+    }
+  ],
+  "autoload": {
+    "psr-4": {
+      "Iso4217\\": "src/"
+    }
+  },
+  "autoload-dev": {
+    "psr-4": {
+      "Iso4217Test\\": "test/"
+    }
+  },
+  "require": {
+    "php": "^7.3 || ~8.0.0"
+  },
+  "require-dev": {
+    "laminas/laminas-coding-standard": "^2.3",
+    "phpunit/phpunit": "^9.5",
+    "psalm/plugin-phpunit": "^0.15.1",
+    "vimeo/psalm": "^4.5.2"
+  },
+  "scripts": {
+    "check": [
+      "@cs-check",
+      "@test"
+    ],
+    "cs-check": "phpcs",
+    "cs-fix": "phpcbf",
+    "test": "phpunit --colors=always",
+    "test-coverage": "phpunit --colors=always --coverage-clover clover.xml",
+    "static-analysis": "psalm --shepherd --stats"
+  }
+}

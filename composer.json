@@ -35,13 +35,10 @@
     }
   },
   "require": {
-    "php": "^7.0 || ~8.0.0"
+    "php": "^7.0 || ~8.0.0 || ~8.1.0"
   },
   "require-dev": {
-    "laminas/laminas-coding-standard": "^2.3",
-    "phpunit/phpunit": "^9.5",
-    "psalm/plugin-phpunit": "^0.15.1",
-    "vimeo/psalm": "^4.5.2"
+    "phpunit/phpunit": "^6.5.14 || ^7.5.20 || ^8.5.23 || ^9.5.13 || dev-master"
   },
   "scripts": {
     "check": [
